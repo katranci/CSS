@@ -1,0 +1,25 @@
+html { background: rgb(150, 150, 150); }
+body { width: 700px; margin: 5% auto; padding: 1em; background: white; font: 81.25% Verdana, sans-serif; }
+	
+h1 { font-size: 2em; }
+
+header { overflow: hidden; }
+header img { float: left; margin: 0 1em 1em 0; }
+header p { margin: 1em 0; line-height: 1.5; }
+
+dl {
+	line-height: 1.5;
+	-moz-column-count: 2; -moz-column-gap: 2em;
+	-webkit-column-count: 2; -webkit-column-gap: 2em;
+	column-count: 2; column-gap: 2em;
+}
+
+dl dt { float: left; font-weight: 600; }
+
+dl dd { 
+	display: block;
+	margin-left: 140px;
+	-moz-column-break-before: avoid;
+	-webkit-column-break-before: avoid;
+	break-before: avoid;
+}
