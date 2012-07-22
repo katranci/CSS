@@ -1,0 +1,71 @@
+/* Note that browser's implementations of the module will change as the draft changes */
+/* The webkit implemention below works on Chrome 20 */
+
+html { background: rgb(150, 150, 150); }
+body { width: 600px; margin: 5% auto; padding: 1em; background: white; font: 81.25% Verdana, sans-serif; }
+
+h1 { font-size: 2em; text-align: center; }
+
+
+ul {
+	margin: 3em 0;
+
+	display: -webkit-box; /* old */
+	display: flex;
+
+	-webkit-box-orient: horizontal; /* old */
+	flex-direction: row;
+
+	font-size: 0.8461em;
+}
+
+ul li { margin: 0 1em; text-align: center; }
+ul li img { display: block; width: 48px; height: 48px; margin: 0 auto 3px;}
+
+ul li.seperator {
+	-webkit-box-flex: 1;
+	flex: 1;
+}
+
+
+article {
+	display: -webkit-box;	/* old */
+	display: flex;
+}
+
+article section {
+	width: 33.33%;
+	padding: 1em;
+	border: 1px solid #DDD;
+	border-radius: 10px;
+	
+	/* Properties as a flex item */
+	-webkit-box-flex: 1; /* old */
+	flex: 1;
+
+	/* Properties as a flex container */
+	display: -webkit-box; /* old */
+	display: flex;
+
+	-webkit-box-orient: vertical; /* old */
+	flex-direction: column;
+}
+
+article section:nth-child(2) { margin: 0 1em; }
+
+article section h2 { font-size: 1.2307em; text-align: center; }
+
+article section p {
+	-webkit-box-flex: 1; /* old */
+	flex: 1;
+
+	margin: 0.7692em 0;
+}
+
+article section a {
+	display: -webkit-box;
+	display: flex;
+
+	-webkit-flex-pack: center;
+	justify-content: center;
+}
