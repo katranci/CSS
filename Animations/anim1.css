@@ -1,0 +1,57 @@
+html, body {height: 100%;}
+
+body {
+	/* Set the element as flex container */
+	display: flex;
+	display: -webkit-box;
+
+	/* Main-axis alignment */
+	justify-content: center;
+	-webkit-box-pack: center;
+
+	/* Cross-axis alignment */
+	align-items: center;
+	-webkit-box-align: center;
+
+	font: 81.25% Verdana, sans-serif;
+}
+
+h1 {margin-top: -10%; font-weight: bold; font-size: 6em;}
+
+
+h1 span {
+	-webkit-animation-name: changeTextColour;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: normal;
+	-webkit-animation-play-state: running;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-fill-mode: none;
+}
+
+h1 span:nth-child(2) {-webkit-animation-delay: -0.2s;}
+h1 span:nth-child(3) {-webkit-animation-delay: -0.4s;}
+h1 span:nth-child(4) {-webkit-animation-delay: -0.6s;}
+h1 span:nth-child(5) {-webkit-animation-delay: -0.8s;}
+h1 span:nth-child(6) {-webkit-animation-delay: -1s;}
+h1 span:nth-child(7) {-webkit-animation-delay: -1.2s;}
+h1 span:nth-child(8) {-webkit-animation-delay: -1.4s;}
+h1 span:nth-child(9) {-webkit-animation-delay: -1.6s;}
+h1 span:nth-child(10) {-webkit-animation-delay: -1.8s;}
+h1 span:nth-child(11) {-webkit-animation-delay: -2s;}
+
+
+@-webkit-keyframes changeTextColour {
+	0% {color: Black;}
+	10% {color: Blue;}
+	20% {color: Brown;}
+	30% {color: Chocolate;}
+	40% {color: Crimson;}
+	50% {color: DarkCyan;}
+	60% {color: DarkGreen;}
+	70% {color: DarkMagenta;}
+	80% {color: DarkSalmon;}
+	90% {color: Gold;}
+	100% {color: OrangeRed;}
+}
