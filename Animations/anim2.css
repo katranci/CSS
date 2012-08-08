@@ -1,0 +1,32 @@
+body {width: 700px; margin: 0 auto; border-right: 3px solid blue; border-left: 3px solid blue;}
+
+
+div {
+	width: 100px;
+	line-height: 50px;
+	margin: 2% 0;
+	text-align: center;
+	background: #333;
+	color: white;
+
+	-webkit-animation-name: slide;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-fill-mode: forwards;
+}
+
+
+div.ease {-webkit-animation-timing-function: ease;}
+div.linear {-webkit-animation-timing-function: linear;}
+div.ease-in {-webkit-animation-timing-function: ease-in;}
+div.ease-out {-webkit-animation-timing-function: ease-out;}
+div.ease-in-out {-webkit-animatin-timing-function: ease-in-out;}
+div.step-start {-webkit-animation-timing-function: step-start;}
+div.step-end {-webkit-animation-timing-function: step-end;}
+div.steps {-webkit-animation-timing-function: steps(7, end);}
+div.cubic-bezier {-webkit-animation-timing-function: cubic-bezier(1,0,0,.43);}
+
+
+@-webkit-keyframes slide {
+	to {margin-left: 600px}
+}

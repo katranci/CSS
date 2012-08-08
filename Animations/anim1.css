@@ -22,7 +22,7 @@ h1 {margin-top: -10%; font-weight: bold; font-size: 6em;}
 h1 span {
 	-webkit-animation-name: changeTextColour;
 	-webkit-animation-duration: 2s;
-	-webkit-animation-timing-function: ease;
+	-webkit-animation-timing-function: linear;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-direction: normal;
 	-webkit-animation-play-state: running;
