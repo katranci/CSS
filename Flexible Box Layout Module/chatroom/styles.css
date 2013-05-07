@@ -1,0 +1,43 @@
+html, body {height: 100%}
+body {background: rgb(240,247,255); font-size: 0.8em; font-family: Consolas, "Lucida Console", monospace;}
+ol, ul {margin: 0; padding: 0; list-style: none;}
+
+
+#chatroom {
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-direction: column;
+	flex-direction: column;
+
+	height: 100%;
+}
+
+#chatroomTop {
+	-webkit-flex: 1;
+	flex: 1;
+
+	display: -webkit-flex;
+	display: flex;
+
+	height: 1px; /* grow from 1px in order to achieve the final size adapting to the rest of the available space in body */
+}
+
+#messages {
+	overflow-y: auto;
+	border-right: 1px solid rgb(200,209,219);
+}
+
+#users {
+	width: 30%;
+	min-width: 200px;
+}
+
+form {
+	border-top: 1px solid rgb(200,209,219);
+}
+
+form > input {
+	box-sizing: border-box;
+	width: 100%;
+}
